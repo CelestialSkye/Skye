@@ -1,0 +1,62 @@
+.grid {
+    transition: 0.5s cubic-bezier(0.6, 0.03, 0.28, 0.98);
+    transform: scale(0.9);
+}
+
+.grid:hover {
+    transform: scale(1.1);
+    transition: 0.5s cubic-bezier(0.6, 0.03, 0.28, 0.98);
+}
+
+
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+
+
+}
+
+
+
+/* Create four equal columns that sits next to each other */
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.grid img {
+    margin-top: 8px;
+    vertical-align: middle;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .grid {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .grid {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}

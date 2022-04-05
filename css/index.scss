@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    overflow: auto;
+    margin: 0;
+    font-family: 'Montserrat';
+    background: #ffffff;
+    font-size: 18px;
+    justify-content: center;
+
+}
+
+
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+
+
+
+
+    /*
+    height: 100%;
+    height: 200vh;
+    background-color: #ffffff;
+    width: 90%;
+    position: relative;
+*/
+
+
+    h1 {
+        margin: 1em 0;
+    }
+
+    .intro {
+        p {
+            letter-spacing: 2px;
+            font-family: 'Asap Condensed';
+            padding-top: 3em;
+            line-height: 1.1rem;
+            font-size: 27px;
+            font-weight: 500;
+            line-height: 1.7em !important
+        }
+    }
+
+
+
+    svg {
+        width: 200px;
+    }
+
+
+    .topHalf {
+
+
+        margin-top: 5em;
+        margin-bottom: 2em;
+        text-align: center;
+        padding: 0 2em;
+        display: inline-block;
+        width: 90%;
+
+
+
+        h1 {
+
+            color: white;
+            text-align: center;
+
+        }
+
+        h2 {
+            font-size: 0.7em;
+            color: white;
+            font-family: 'Brandon Grotesque';
+        }
+    }
+
+
+
+
+    .navBar {
+
+        margin-top: 20px;
+        align-self: center;
+        padding: 1em;
+        justify-self: center;
+
+
+
+
+
+
+        .menu {
+            position: relative;
+            display: inline-block;
+
+
+        }
+
+
+        .navButton {
+            font-family: 'Asap Condensed';
+            background-color: #ffffff;
+            border: none;
+            cursor: pointer;
+            font-size: .9em;
+            color: rgb(71, 71, 71);
+            margin-left: 20px;
+
+        }
+
+        .navButton:hover {
+            color: rgba(153, 153, 153, 0.9);
+        }
+
+
+
+        .navDropmenu {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            flex-direction: column;
+
+        }
+
+        .navDropmenu a:hover {
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            text-align: center;
+            color: rgba(153, 153, 153, 0.9);
+
+        }
+
+        .menu:hover .navDropmenu {
+            width: 100px;
+            display: flex;
+            background-color: #ffffff;
+            padding: 5px 10px 20px 5px;
+
+
+
+        }
+
+        .menu:hover .navDropmenu {
+            background-color: transparent;
+            text-align: center;
+            color: black;
+        }
+
+        a {
+            font-family: 'Asap Condensed';
+            color: #EEEEEE;
+            text-decoration: none;
+            color: inherit;
+            float: left;
+            font-size: 12px;
+            margin: 5px;
+
+        }
+
+    }
+
+    //MAIN PAGE CONTENT
+    .mainContent {
+
+        margin: auto;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 100px;
+        text-align: center;
+
+        .text {
+            display: inline-block;
+            text-align: left;
+
+
+            p {
+
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                margin-bottom: 40px;
+
+            }
+        }
+    }
+
+
+}
+
+//FOOTER 
+.footerBackground {
+    text-align: center;
+    color: rgba(129, 129, 129, 0.9);
+    position: relative;
+    margin: 0 auto;
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 50px;
+
+
+        a,
+        a:hover {
+            text-decoration: none;
+        }
+
+        .socialbtns,
+        .socialbtns ul,
+        .socialbtns li {
+            margin: 0;
+            padding: 5px;
+        }
+
+        .socialbtns li {
+            list-style: none outside none;
+            display: inline-block;
+        }
+
+        .socialbtns .fa {
+            width: 40px;
+            height: 28px;
+            color: #000;
+            background-color: #FFF;
+            border: 1px solid #000;
+            padding-top: 12px;
+            border-radius: 22px;
+            -moz-border-radius: 22px;
+            -webkit-border-radius: 22px;
+            -o-border-radius: 22px;
+        }
+
+        .socialbtns .fa:hover {
+            color: #FFF;
+            background-color: #000;
+            border: 1px solid #000;
+        }
+
+        h1 {
+            font-family: 'Asap Condensed';
+            font-size: 10px;
+            letter-spacing: 1px;
+        }
+    }
+
+}
+
+
+
+//OVER 700PX
+@media only screen and (min-width: 700px) {
+
+
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: 0 auto;
+
+
+
+
+        h1 {
+
+            margin: 1em 0;
+        }
+
+        .intro {
+            p {
+                letter-spacing: 2px;
+                font-family: 'Asap Condensed';
+                padding-top: 3em;
+                line-height: 1.1rem;
+                font-size: 27px;
+                font-weight: 500;
+                line-height: 1.7em !important
+            }
+        }
+
+        svg {
+            width: 250px;
+        }
+
+        .topHalf {
+
+
+            margin-top: 5em;
+            margin-bottom: 2em;
+            text-align: center;
+            padding: 0 2em;
+            display: inline-block;
+            width: 70%;
+
+
+
+            h1 {
+
+                color: white;
+                text-align: center;
+
+            }
+
+            h2 {
+                font-size: 0.7em;
+                color: white;
+                font-family: 'Brandon Grotesque';
+            }
+        }
+
+
+
+
+        .navBar {
+
+
+            align-self: center;
+            padding: 1em;
+            justify-self: center;
+
+
+
+            .menu {
+                position: relative;
+                display: inline-block;
+
+
+            }
+
+
+            .navButton {
+                font-family: 'Asap Condensed';
+                background-color: #ffffff;
+                border: none;
+                cursor: pointer;
+                font-size: 20px;
+                margin-left: 30px;
+                color: rgb(71, 71, 71);
+
+            }
+
+            .navButton:hover {
+                color: rgba(153, 153, 153, 0.9);
+            }
+
+
+
+            .navDropmenu {
+                display: none;
+                position: absolute;
+                background-color: #ffffff;
+                flex-direction: column;
+
+            }
+
+            .navDropmenu a:hover {
+                display: flex;
+                flex-direction: column;
+                background-color: #ffffff;
+                text-align: center;
+                color: rgba(153, 153, 153, 0.9);
+
+            }
+
+            .menu:hover .navDropmenu {
+                width: 100px;
+                display: flex;
+                background-color: #ffffff;
+                padding: 5px 10px 40px 22px;
+
+
+
+            }
+
+            .menu:hover .navDropmenu {
+                background-color: transparent;
+                text-align: center;
+                color: black;
+            }
+
+            a {
+                font-family: 'Asap Condensed';
+                color: #EEEEEE;
+                text-decoration: none;
+                color: inherit;
+                display: inline-block;
+                font-size: 15px;
+                margin: 5px;
+
+            }
+        }
+
+
+
+        .mainContent {
+
+            margin: auto;
+            width: 60%;
+            padding-top: 20px;
+            padding-bottom: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .text {
+                display: inline-block;
+                text-align: left;
+
+                p {
+                    font-family: Arial, Helvetica, sans-serif;
+                    width: 0 auto;
+                    font-size: 1.1em;
+                    margin-bottom: 40px;
+                    line-height: 1.5em;
+                }
+            }
+        }
+    }
+
+    //FOOTER 
+    .footerBackground {
+        text-align: center;
+        color: rgba(129, 129, 129, 0.9);
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+
+
+
+        footer {
+            padding-top: 20px;
+            padding-bottom: 50px;
+
+
+            a,
+            a:hover {
+                text-decoration: none;
+            }
+
+            .socialbtns,
+            .socialbtns ul,
+            .socialbtns li {
+                margin: 0;
+                padding: 5px;
+            }
+
+            .socialbtns li {
+                list-style: none outside none;
+                display: inline-block;
+            }
+
+            .socialbtns .fa {
+                width: 40px;
+                height: 28px;
+                color: #000;
+                background-color: #FFF;
+                border: 1px solid #000;
+                padding-top: 12px;
+                border-radius: 22px;
+                -moz-border-radius: 22px;
+                -webkit-border-radius: 22px;
+                -o-border-radius: 22px;
+            }
+
+            .socialbtns .fa:hover {
+                color: #FFF;
+                background-color: #000;
+                border: 1px solid #000;
+            }
+
+            h1 {
+                font-family: 'Asap Condensed';
+                font-size: 10px;
+                letter-spacing: 1px;
+            }
+        }
+
+    }
+}
+
+
+
+//MAIN PAGE CONTENT
